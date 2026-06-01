@@ -97,7 +97,7 @@ const handleNewChat = () => {
 
     try {
       const response = await axios.post(
-        "http://localhost:3000/chat",
+        "https://nexus-ai-1-e76p.onrender.com/chat",
         {
           message: currentMessage,
           mode:mode,
@@ -368,7 +368,7 @@ const handleNewChat = () => {
 
   try {
     const response = await axios.post(
-      "http://localhost:3000/upload",
+      "https://nexus-ai-1-e76p.onrender.com/upload",
       formData
     );
 
