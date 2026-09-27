@@ -250,7 +250,7 @@ IMPORTANT:
       const completion =
         await openai.chat.completions.create({
           model:
-            "meta-llama/llama-3-8b-instruct",
+            "meta-llama/llama-3-8b-instruct:free",
 
           messages: [
             {
@@ -286,10 +286,8 @@ IMPORTANT:
 );
 
 
-const PORT = 3000;
+const PORT = process.env.PORT || 3000;
 
 app.listen(PORT, () => {
-  console.log(
-    `Server running on port ${PORT}`
-  );
+  console.log(`Server running on port ${PORT}`);
 });
