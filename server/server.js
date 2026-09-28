@@ -249,8 +249,7 @@ IMPORTANT:
 
       const completion =
         await openai.chat.completions.create({
-          model:
-            "meta-llama/llama-3-8b-instruct:free",
+          model: "google/gemma-4-31b-it:free",
 
           messages: [
             {
