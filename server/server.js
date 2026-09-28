@@ -249,7 +249,7 @@ IMPORTANT:
 
       const completion =
         await openai.chat.completions.create({
-          model: "google/gemma-4-31b-it:free",
+          model: "openrouter/free",
 
           messages: [
             {
